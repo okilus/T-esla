@@ -1,0 +1,386 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+menu, ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: lightgray;
+  background-color: black;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: lightgray;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  h4 {
+    font-size: 22px;
+  }
+}
+
+h5 {
+  font-size: 15px;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  h5 {
+    font-size: 20px;
+  }
+}
+
+p {
+  font-size: 14px;
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 18px;
+  }
+}
+
+.logo {
+  font-size: 22px;
+}
+
+header {
+  background-color: rgb(18, 18, 19);
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  color: black;
+  padding: 10px;
+}
+header .nav-1 {
+  width: 100%;
+  height: 100%;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+}
+@media (min-width: 768px) {
+  header .nav-1 {
+    padding: 10px 60px;
+  }
+}
+@media (min-width: 1024px) {
+  header .nav-1 {
+    padding: 10px 100px;
+  }
+}
+header .nav-1 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+@media (min-width: 1024px) {
+  header .nav-1 ul {
+    gap: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  header .nav-1 ul {
+    gap: 60px;
+  }
+}
+header .nav-1 ul a:hover {
+  color: rgb(207, 203, 203);
+}
+
+@media (min-width: 1600px) {
+  .section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
+.section .bg-car {
+  margin-top: -72px;
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+@media (min-width: 1600px) {
+  .section .bg-car {
+    min-width: 75%;
+    height: 101vh;
+  }
+}
+.section .bg-car img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section .grp-1 {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .section .grp-1 {
+    padding: 20px 60px;
+  }
+}
+@media (min-width: 1600px) {
+  .section .grp-1 {
+    padding: 0px 20px;
+    height: 93vh;
+    padding-top: 30px;
+  }
+}
+.section .grp-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  .section .grp-2 {
+    gap: 60px;
+  }
+}
+@media (min-width: 1600px) {
+  .section .grp-2 {
+    gap: 48px;
+  }
+}
+.section .grp-2 .reserve {
+  font-weight: 400;
+  color: lightgray;
+}
+.section .grp-2 .grp-add-1 {
+  background-color: rgb(24, 23, 23);
+  width: 400px;
+  padding: 10px;
+}
+.section .grp-2 .grp-add-1 .grp-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 10px;
+}
+.section .grp-2 .grp-add-1 .grp-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 15px;
+  margin-top: 30px;
+}
+.section .grp-2 .grp-5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 30px;
+}
+.section .grp-2 .grp-5 .grp-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 10px;
+}
+.section .grp-2 .grp-5 .grp-7 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 15px;
+}
+.section .grp-2 .desc {
+  font-size: 12px;
+}
+.section .grp-2 .card {
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 430px;
+  height: 40px;
+  border: none;
+  border: 1px solid lightgray;
+  background-color: inherit;
+  color: lightgray;
+}
+.section .grp-2 .card:hover {
+  background-color: rgb(17, 5, 70);
+  color: white;
+  border: none;
+}
+
+footer {
+  width: auto;
+  text-align: center;
+  margin-top: -30px;
+}
+footer h5 {
+  font-size: 14px;
+  font-weight: 300;
+}/*# sourceMappingURL=order.css.map */

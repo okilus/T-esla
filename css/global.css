@@ -1,0 +1,326 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+menu, ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.section .des .order {
+  width: 400px;
+  height: 35px;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  border-radius: 4px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.section .des .order:hover {
+  background-color: rgb(173, 173, 173);
+  cursor: pointer;
+}
+
+.section .des .demo {
+  width: 400px;
+  height: 35px;
+  background-color: rgb(10, 2, 41);
+  color: white;
+  font-weight: 600;
+  border-radius: 4px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.section .des .demo:hover {
+  background-color: rgb(27, 16, 92);
+  cursor: pointer;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  background-color: black;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: lightgray;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  color: black;
+  padding-top: 20px;
+}
+header .nav-1 {
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+}
+@media (min-width: 768px) {
+  header .nav-1 {
+    padding: 10px 60px;
+  }
+}
+@media (min-width: 1024px) {
+  header .nav-1 {
+    padding: 10px 100px;
+  }
+}
+header .nav-1 .logo {
+  font-size: 24px;
+  font-family: "Fustat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+header .nav-1 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+@media (min-width: 1024px) {
+  header .nav-1 ul {
+    gap: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  header .nav-1 ul {
+    gap: 60px;
+  }
+}
+header .nav-1 ul a {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+header .nav-1 ul a:hover {
+  color: rgb(207, 203, 203);
+}
+
+.section {
+  position: relative;
+  top: -65px;
+  left: 0px;
+  width: auto;
+  height: 100vh;
+}
+.section .image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section .cost {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.section .cost p {
+  font-size: 14px;
+  font-weight: 400;
+}
+.section .cost h2 {
+  font-size: 28px;
+}
+@media (min-width: 768px) {
+  .section .cost h2 {
+    font-size: 34px;
+  }
+}
+.section .cost h4 {
+  font-size: 18px;
+}
+.section .des {
+  position: absolute;
+  bottom: 150px;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+@media (min-width: 768px) {
+  .section .des {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+  }
+}
+.section .des a {
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .section .des a {
+    width: 40%;
+  }
+}
+@media (min-width: 1024px) {
+  .section .des a {
+    width: 20%;
+  }
+}
+.section .des .order {
+  border: none;
+}
+@media (min-width: 768px) {
+  .section .des .order {
+    width: 300px;
+    height: 40px;
+  }
+}
+.section .des .demo {
+  border: none;
+}
+@media (min-width: 768px) {
+  .section .des .demo {
+    width: 300px;
+    height: 40px;
+  }
+}
+footer {
+  width: auto;
+  text-align: center;
+  margin-top: -30px;
+}
+footer h5 {
+  font-size: 14px;
+  font-weight: 300;
+}/*# sourceMappingURL=global.css.map */

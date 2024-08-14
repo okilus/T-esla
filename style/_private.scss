@@ -1,0 +1,80 @@
+%box1 {
+    width: 400px;
+    height: 35px;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+    &:hover {
+        background-color: rgb(173, 173, 173);
+        cursor: pointer;
+    }
+}
+
+%box2 {
+    width: 400px;
+    height: 35px;
+    background-color: rgb(10, 2, 41);
+    color: white;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+    &:hover {
+        background-color: rgb(27, 16, 92);
+        cursor: pointer;
+    }
+}
+
+%box3 {
+    width: 400px;
+    height: 35px;
+    background-color: rgb(71, 33, 223);
+    color: white;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+    &:hover {
+        background-color: rgb(33, 9, 170);
+        cursor: pointer;
+    }
+    @media (min-width: 768px) {
+        width: 250px;
+        
+    }
+}
+
+%box4 {
+    width: 400px;
+    height: 40px;
+    border: none;
+    border: 1px solid lightgray;
+    color: lightgray;
+    background-color: rgba(78, 76, 76, 0.6);
+    font-weight: 700;
+    transition: all 0.5s ease;
+    &:hover {
+        background-color: gray;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+%box5 {
+    width: 400px;
+    height: 40px;
+    border: none;
+    border: 1px solid lightgray;
+    color: lightgray;
+    background-color: black;
+    font-weight: 700;
+    transition: all 0.5s ease;
+    &:hover {
+        background-color: gray;
+        color: white;
+        cursor: pointer;
+    }
+    @media (min-width: 768px) {
+        width: 150px;
+    }
+}

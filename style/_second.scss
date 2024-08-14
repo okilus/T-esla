@@ -1,0 +1,155 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    background-color: black;
+}
+// scrollbar
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+::-webkit-scrollbar-thumb {
+    background: lightgray;
+}
+
+
+
+// responsive rezolutions: 480px / 768px / 1024px / 1600px
+
+h2 {
+    font-size: 26px;
+    font-weight: 500;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+p {
+    font-size: 14px;
+    font-weight: 300;
+}
+.logo {
+    font-size: 22px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    color: black;
+    padding-top: 20px;
+    .nav-1 {
+        color: white;
+        width: 100%;
+        height: 100%;
+        @include flex-1 (flex, row, space-between, center);
+        padding: 10px 20px;
+        @media (min-width: 768px) {
+            padding: 10px 60px;
+        }
+        @media (min-width: 1024px) {
+            padding: 10px 100px;
+        }
+        ul {
+        @include flex-1 (flex, row, space-between, center);
+        gap: 20px;
+        @media (min-width: 1024px) {
+            gap: 40px;
+        }
+        @media (min-width: 1024px) {
+            gap: 60px;
+        }
+        a {
+            &:hover {
+                color: rgb(207, 203, 203);
+            }
+        }
+        }
+    }
+}
+
+.section {
+    margin-top: 100px;
+    @include flex-1(flex, column, space-between, center);
+    gap: 50px;
+    .gr-1 {
+        @include flex-1(flex, column, space-between, start);
+        gap: 20px;
+        max-width: 540px;
+    }
+    .gr-2,.gr-name,.gr-amail-phone {
+        @include flex-1(flex, column, space-between, start);
+        gap: 50px;
+    }
+    @media (min-width: 768px) {
+        
+        .gr-name,.gr-amail-phone {
+            @include flex-1(flex, row, space-between, center);
+            gap: 20px;
+            
+        }
+        .gr-2 {
+            padding-left: 40px;
+
+        }
+    }
+    .gr-2 {
+        @media (min-width: 768px) {
+            width: 620px;
+            margin: 0 auto;
+        }
+        label {
+            color: lightgray;
+        }
+        input {
+            width: 400px;
+            height: 40px;
+            background-color: lightgray;
+            border: none;
+            border-radius: 4px;
+            @media (min-width: 768px) {
+                width: 260px;
+                
+            }
+        }
+        .checkbox {
+            border: 1px solid gray;
+            width: 20px;
+            height: 20px;
+            
+        }
+    }
+    .gr-3 {
+        @include flex-1(flex, row, space-between, center);
+        gap: 5px;
+    }
+    .col {
+        @include flex-1(flex, column, space-between, start);
+        gap: 10px;
+    }
+    .btn {
+        @extend %box3;
+        border: none;
+    }
+}
+
+footer {
+    width: auto;
+    text-align: center;
+    margin-top: -30px;
+    h5 {
+        font-size: 14px;
+        font-weight: 300;
+    }
+}

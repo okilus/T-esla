@@ -1,0 +1,191 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: lightgray;
+    background-color: black;
+}
+// scrollbar
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+::-webkit-scrollbar-thumb {
+    background: lightgray;
+}
+
+
+
+// responsive rezolutions: 480px / 768px / 1024px / 1600px
+
+h2 {
+    font-size: 26px;
+    font-weight: 500;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+    @media (min-width: 768px) {
+        font-size: 22px;
+    }
+}
+h5 {
+    font-size: 15px;
+    font-weight: 400;
+    @media (min-width: 768px) {
+        font-size: 20px;
+    }
+}
+p {
+    font-size: 14px;
+    font-weight: 300;
+    @media (min-width: 768px) {
+        font-size: 18px;
+    }
+}
+.logo {
+    font-size: 22px;
+}
+header {
+    background-color: rgb(18, 18, 19);
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    color: black;
+    padding: 10px;
+    .nav-1 {
+        width: 100%;
+        height: 100%;
+        color: white;
+        width: 100%;
+        height: 100%;
+        @include flex-1 (flex, row, space-between, center);
+        padding: 10px 20px;
+        @media (min-width: 768px) {
+            padding: 10px 60px;
+        }
+        @media (min-width: 1024px) {
+            padding: 10px 100px;
+        }
+        ul {
+        @include flex-1 (flex, row, space-between, center);
+        gap: 20px;
+        @media (min-width: 1024px) {
+            gap: 40px;
+        }
+        @media (min-width: 1024px) {
+            gap: 60px;
+        }
+        a {
+            &:hover {
+                color: rgb(207, 203, 203);
+            }
+        }
+        }
+    }
+}
+.section {
+    @media (min-width: 1600px) {
+        @include flex-1 (flex, row, start, start);
+    }
+    .bg-car {
+        margin-top: -72px;
+        width: 100%;
+        height: 500px;
+        position: relative;
+        @media (min-width: 1600px) {
+            min-width: 75%;
+            height: 101vh;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            object-fit: cover;
+        }
+    }
+    .grp-1 {
+        padding: 20px;
+        @media (min-width: 768px) {
+            padding: 20px 60px;
+        }
+        @media (min-width: 1600px) {
+            padding: 0px 20px;
+            height: 93vh;
+            padding-top: 30px;
+        }
+    }
+    .grp-2 {
+        @include flex-1 (flex, column, space-around, start);
+        gap: 30px;
+        @media (min-width: 768px) {
+            gap: 60px;
+        }
+        @media (min-width: 1600px) {
+            gap: 48px;
+        }
+        .reserve {
+            font-weight: 400;
+            color: lightgray;
+        }
+        .grp-add-1 {
+            background-color: rgb(24, 23, 23);
+            width: 400px;
+            padding: 10px;
+            .grp-3 {
+                @include flex-1 (flex, column, space-around, start);
+                gap: 10px;
+            }
+            .grp-4 {
+                @include flex-1 (flex, column, space-around, start);
+                gap: 15px;
+                margin-top: 30px;
+            }
+        } 
+        .grp-5 {
+            @include flex-1 (flex, column, space-around, start);
+            gap: 30px;
+            .grp-6 {
+                @include flex-1 (flex, column, space-around, start);
+                gap: 10px;
+            }
+            .grp-7 {
+                @include flex-1 (flex, column, space-around, start);
+                gap: 15px;
+            }
+        }
+        .desc {
+            font-size: 12px;
+        }
+        .card {
+            align-self: center;
+            width: 430px;
+            height: 40px;
+            border: none;
+            border: 1px solid lightgray;
+            background-color: inherit;
+            color: lightgray;
+            &:hover {
+                background-color: rgb(17, 5, 70);
+                color: white;
+                border: none;
+            }
+        }
+    }
+}
+
+footer {
+    width: auto;
+    text-align: center;
+    margin-top: -30px;
+    h5 {
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
